@@ -1,3 +1,5 @@
+
+
 .grid-container {
         
     display: grid;
@@ -25,39 +27,87 @@
       color: black;
       font-weight: bolder;
   }
-  p{
-      color: white;
-      
+  
+    .app-wrap {
+    background: linear-gradient(180deg, #7802ae, #460166);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  li{
-      color: white;
-      
+  
+  .search-box {
+    height: 61px;
+    width: 217px;
+    border-top-left-radius: 30px;
+    border: none;
+    border-bottom-right-radius: 30px;
+    border-bottom: 4px solid #d5820c;
+    background: #9d4ec2;
+    outline: none;
+    padding: 0 5%;
+    font-size: larger;
+    color: #000000a6;
+    transition: 0.5s ease;
   }
-  .bdy{
-      margin-left: 20%;
+  
+  .search-box::placeholder {
+    color: #000000a6;
+    transition: 0.5s ease;
   }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
+  
+  .search-box:focus::placeholder {
+    color: #9d4ec2;
   }
-  #pp{
-      color: black;
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  #show{
-      color: black;
-      font-size: xx-large;
+  
+  .search {
+    height: 6vh;
+    width: 7vw;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 10% 0;
+    font-size: medium;
+    box-shadow: 0px 0px 12px 1px rgb(0 0 0 / 48%);
+    transition: 0.5s ease-out;
+    background: aliceblue;
   }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
+  
+  :is(.location, .current) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
   }
-  #show2{
-      color: black;
-      font-size: xx-large;
+  
+  .city {
+    font-size: x-large;
   }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
+  
+  .temp {
+    font-size: 6em;
+    margin: 20% 0;
+    text-shadow: 0px 8px 1px rgb(0 0 0);
+    font-weight: bold;
   }
-     
+  
+  .weather {
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 0px 1px 5px black;
+  }
+  
+  .hi-low {
+    font-size: xx-large;
+    font-weight: 100;
+    text-shadow: 0px 1px 5px black;
+  }
     
